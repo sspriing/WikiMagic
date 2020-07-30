@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/WikiMagic/precache-manifest.d2e5f1607c3262f68bece5b60f74ede3.js"
+  "/WikiMagic/precache-manifest.6bd4a822e322db0aaeb45a37beee7373.js"
 );
 
 self.addEventListener('message', (event) => {
