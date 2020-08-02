@@ -1,38 +1,81 @@
 .App {
   text-align: center;
+  margin-top:30px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .input-data{
+  height: 200px;
+  margin-top: 30px;
+  margin-left:auto; 
+  margin-right:auto;
+  margin-bottom:100px;
+  width: 70%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select{
+  margin:10px;
+  height:40px;
+  font-size: 20px;
+  background-color: rgb(231, 231, 231);
+  border:none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input{
+  margin:10px;
+  height:37px;
+  font-size: 20px;
+  background-color: rgb(231, 231, 231);
+  border:none;
 }
 
-.App-link {
-  color: #61dafb;
+#content{
+  margin-left:auto;
+  margin-right:auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#totalPrice{
+  font-size: 30px;
+}
+
+#submit{
+  margin-left:30px;
+  font-size: 27px;
+  border-radius: 10px;
+  background-color: rgba(221, 221, 221, 0.63);
+  border-color: rgb(142, 151, 156);
+}
+
+#warnning{
+  color: rgb(255, 0, 2);
+  margin-top:10px;
+  font-weight: bold;
+}
+
+#today-sold{
+  font-weight: bold;
+
+  margin-left:55%; 
+  margin-right:auto;
+}
+
+#item-list{
+  width: 70%;
+  border-collapse: collapse;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+th{
+  background-color: rgb(57, 111, 182);
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+tbody tr:nth-child(2n+1){
+  background-color: rgb(240, 240, 240);
+}
+tbody tr:nth-child(2n){
+  background-color: rgb(214, 214, 214);
 }
