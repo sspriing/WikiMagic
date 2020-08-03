@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   margin-top:30px;
+  height:100%;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -13,7 +14,7 @@
   width: 70%;
 }
 
-select{
+.App .input-data select{
   margin:10px;
   height:40px;
   font-size: 20px;
@@ -21,7 +22,7 @@ select{
   border:none;
 }
 
-input{
+.App .input-data input{
   margin:10px;
   height:37px;
   font-size: 20px;
@@ -66,16 +67,20 @@ input{
   margin-right:auto;
 }
 
-th{
+#item-list th{
   background-color: rgb(57, 111, 182);
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-tbody tr:nth-child(2n+1){
+#item-list tbody tr:nth-child(2n+1){
   background-color: rgb(240, 240, 240);
 }
-tbody tr:nth-child(2n){
+#item-list tbody tr:nth-child(2n){
   background-color: rgb(214, 214, 214);
+}
+
+#date-picker{
+  height:500px;
 }

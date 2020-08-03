@@ -1,10 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
-import Input from './components/Input'
 import firebase from 'firebase'
-import TodayData from './components/TodayData';
-import { getDate, delItem } from './lib/FirebaseData';
+import {Route, HashRouter,BrowserRouter, Switch} from 'react-router-dom'
+import RecordSold from './page/SoldRecord';
+import Purchase from './page/Purchase';
+import WritePurchaseRecord from './page/WritePurchaseRecord';
+import ShowPurchaseRecord from './page/ShowPurchaseRecord'
+import Static from './page/Static';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuMUMqkpuvevgi9pu_NM6ZqUBniwvhuQs",
@@ -23,28 +26,18 @@ export const db = firebase.firestore();
 
 function App() {
   return (
-    <div className="App">
-        <h2>위키매직 판매일보</h2>
-        <h3>{getDate()}</h3>
-      <div className = "input-data">
-        <Input/>
+    <Fragment>
+      <div className = "App">
+        <BrowserRouter basename = {process.env.PUBLIC_URL}>
+            <Route excat path = "/home" component = {RecordSold}/>
+            <Route path = "/purchase" component = {Purchase}/>
+            <Route path = "/static" component = {Static}/>
+            <Route path = "/write-purchase-record" component = {WritePurchaseRecord}/>
+            <Route path = "/show-purchase-record" component = {ShowPurchaseRecord}/>
+        </BrowserRouter>
       </div>
-      
-      <div id = "content">
-        <p id="today-sold">오늘 매출: <TodayData/></p>
-        <table id = "item-list">
-          <thead>
-            <tr>
-              <th>번호</th><th>판매시간</th><th>상품명</th><th>수량</th><th>단가</th><th>총금액</th><th>삭제</th>
-            </tr>
-            
-          </thead>
-          <tbody id = "item"></tbody>
-        </table>
-      </div>
-      
-      
-    </div>
+        
+    </Fragment>
   );
 }
 
