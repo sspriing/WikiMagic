@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#chat client lib
+/WrapsodyLib(rename to lib)
+
 # testing
 /coverage
 

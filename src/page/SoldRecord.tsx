@@ -13,7 +13,7 @@ function RecordSold(){
         <Input/>
       </div>
       
-      <div id = "content">
+      <div id = "content" >
         <p id="today-sold">오늘 매출: <TodayData/></p>
         <table id = "item-list">
           <thead>
@@ -21,7 +21,7 @@ function RecordSold(){
               <th>번호</th><th>판매시간</th><th>상품명</th><th>수량</th><th>단가</th><th>총금액</th><th>삭제</th>
             </tr>
           </thead>
-          <tbody id = "item"></tbody>
+            <tbody id = "item"></tbody>
         </table>
       </div>
         </Fragment>
