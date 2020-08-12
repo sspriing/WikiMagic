@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/WikiMagic/static/css/main.753b6e77.chunk.css",
-    "main.js": "/WikiMagic/static/js/main.fb2914fd.chunk.js",
-    "main.js.map": "/WikiMagic/static/js/main.fb2914fd.chunk.js.map",
+    "main.js": "/WikiMagic/static/js/main.a1760f69.chunk.js",
+    "main.js.map": "/WikiMagic/static/js/main.a1760f69.chunk.js.map",
     "runtime-main.js": "/WikiMagic/static/js/runtime-main.05bd6a1c.js",
     "runtime-main.js.map": "/WikiMagic/static/js/runtime-main.05bd6a1c.js.map",
     "static/css/2.a05dab16.chunk.css": "/WikiMagic/static/css/2.a05dab16.chunk.css",
     "static/js/2.8205e667.chunk.js": "/WikiMagic/static/js/2.8205e667.chunk.js",
     "static/js/2.8205e667.chunk.js.map": "/WikiMagic/static/js/2.8205e667.chunk.js.map",
     "index.html": "/WikiMagic/index.html",
-    "precache-manifest.b3685170cdac1a25dfa31615e0cce276.js": "/WikiMagic/precache-manifest.b3685170cdac1a25dfa31615e0cce276.js",
+    "precache-manifest.16bd52ffd6d28112fd4710ff4331be03.js": "/WikiMagic/precache-manifest.16bd52ffd6d28112fd4710ff4331be03.js",
     "service-worker.js": "/WikiMagic/service-worker.js",
     "static/css/2.a05dab16.chunk.css.map": "/WikiMagic/static/css/2.a05dab16.chunk.css.map",
     "static/css/main.753b6e77.chunk.css.map": "/WikiMagic/static/css/main.753b6e77.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.a05dab16.chunk.css",
     "static/js/2.8205e667.chunk.js",
     "static/css/main.753b6e77.chunk.css",
-    "static/js/main.fb2914fd.chunk.js"
+    "static/js/main.a1760f69.chunk.js"
   ]
 }
