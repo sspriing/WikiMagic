@@ -50,7 +50,7 @@ export function renderItem(doc, int, date){
 
     number.textContent = int
     time.textContent = doc.id.slice(0,5)
-    name.textContent= doc.data().data.age + " - " +doc.data().data.category
+    name.textContent= doc.data().data.category
     cnt.textContent = doc.data().data.cnt
     price.textContent = numberWithCommas(doc.data().data.price)
     totalPrice.textContent = numberWithCommas(doc.data().data.totalPrice)
@@ -66,7 +66,11 @@ export function renderItem(doc, int, date){
     li.appendChild(totalPrice)
     li.appendChild(del)
 
+    if(int === 0)
     itemList?.appendChild(li)
+else{
+    itemList?.insertBefore(li, itemList.firstChild)
+}
     if(todaySold){
         todaySold.textContent= "총 매출: " + numberWithCommas(ts)
     }
@@ -122,8 +126,16 @@ export function renderItemNoDelete(doc, int, date){
     li.appendChild(price)
     li.appendChild(totalPrice)
 
-    itemList?.appendChild(li)
+    if(int === 0)
+        itemList?.appendChild(li)
+    else{
+        itemList?.insertBefore(li, itemList.firstChild)
+    }
+        
+    // itemList?.appendChild(li)
     if(todaySold){
         todaySold.textContent= "총 매출: " + numberWithCommas(ts)
     }
+
+        
 }

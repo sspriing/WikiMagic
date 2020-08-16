@@ -4,7 +4,7 @@ import { db } from "../App";
 export function getDate():string{
     var today = new Date()
     var strDay: string;
-    var dd = String(today.getDate()-11).padStart(2,'0')
+    var dd = String(today.getDate()).padStart(2,'0')
     var mm = String(today.getMonth()+1).padStart(2,'0')
     var yyyy = today.getFullYear();
     strDay = yyyy+ "-"+mm+"-"+dd
