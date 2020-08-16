@@ -7,6 +7,7 @@ import Purchase from './page/Purchase';
 import WritePurchaseRecord from './page/WritePurchaseRecord';
 import ShowPurchaseRecord from './page/ShowPurchaseRecord'
 import Static from './page/Static';
+import 'react-calendar/dist/Calendar.css'
 
 
 const firebaseConfig = {
@@ -24,17 +25,17 @@ firebase.initializeApp(firebaseConfig)
 
 export const db = firebase.firestore();
 
-function App() {
+const App=()=> {
   return (
     <Fragment>
       <div className = "App">
-        <BrowserRouter basename = {process.env.PUBLIC_URL}>
-            <Route excat path = "/home" component = {RecordSold}/>
+        <HashRouter>
             <Route path = "/purchase" component = {Purchase}/>
             <Route path = "/static" component = {Static}/>
             <Route path = "/write-purchase-record" component = {WritePurchaseRecord}/>
             <Route path = "/show-purchase-record" component = {ShowPurchaseRecord}/>
-        </BrowserRouter>
+            <Route excat path = "/home" component = {RecordSold}/>
+        </HashRouter>
       </div>
         
     </Fragment>

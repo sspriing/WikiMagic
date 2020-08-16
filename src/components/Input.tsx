@@ -1,7 +1,7 @@
 import React, {Component, Fragment, useState} from 'react';
 import {db} from '../App'
 import InputNumber from 'react-input-just-numbers';
-import{getTime, getDate} from '../lib/FirebaseData'
+import{getTime, getDate, numberWithCommas} from '../lib/FirebaseData'
 
 function Input(){
     const [age, setAge] = useState("성인");
@@ -35,6 +35,7 @@ function Input(){
                 <option value = "우양산">우양산</option>
                 <option value = "넥타이">넥타이</option>
                 <option value = "마스크 / 마스크줄">마스크 / 마스크줄</option>
+                <option value = "매출 누락">매출 누락</option>
             </Fragment>
     }    
     if(age === "아동"){
@@ -52,7 +53,7 @@ function Input(){
     }
 
     function sendToFirebase(){
-        if(price === undefined || cnt === undefined || price ===0 || cnt ===0){
+        if(price === undefined || cnt === undefined || price ===0 || cnt ===0 || isNaN(price) || isNaN(cnt)){
             setWranning("단가와 수량을 입력하세요")
             return;
         }
@@ -112,7 +113,7 @@ function Input(){
                     console.log(cnt)
                     console.log(totalPrice)
                 }}></InputNumber>
-                <div id = "totalPrice" >총 금액: {totalPrice}
+                <div id = "totalPrice" >총 금액: {numberWithCommas(totalPrice)}
                 <button id = "submit" type = "submit" onClick={sendToFirebase}>입력</button>
                 </div>
                 <div id = "warnning">{warnning}</div>
