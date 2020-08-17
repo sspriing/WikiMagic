@@ -3,14 +3,12 @@ import Input from '../components/Input'
 import TodayData from '../components/TodayData'
 import {getDate} from '../lib/FirebaseData'
 import {Link} from 'react-router-dom'
+import { RecordCategory } from '../components/Category'
 
 function RecordSold(){
   const today: string = getDate()
-
-  window.onload = function(){
-
-
-  }
+  
+  RecordCategory(today)
 
     return(
         <Fragment>
@@ -18,10 +16,14 @@ function RecordSold(){
         <h3>{getDate()}</h3>
       <div className = "input-data">
         <Input/>
-        <div>
-          종목별 매출
-          <table id = "category-sold">
-
+        <div id = "category-table-wrap">
+          <p>종목별 매출</p>
+          <table id = "category-list">
+          <thead>
+            <tr>
+              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
+            </tr>
+          </thead>
           </table>
         </div>
       </div>

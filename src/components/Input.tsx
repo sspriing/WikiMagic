@@ -10,7 +10,7 @@ function Input(){
     const [cnt, setCnt] = useState(0);
     const [totalPrice, setTP] = useState(0);
     const [warnning, setWranning] = useState("");
-    const [soldTime, setSoldTime] = useState("")
+    const [ts, setTS] = useState(0)
 
     let data = {
         time: "",
@@ -52,14 +52,25 @@ function Input(){
         </Fragment>
     }
 
-    function sendToFirebase(){
+    async function sendToFirebase(){
         if(price === undefined || cnt === undefined || price ===0 || cnt ===0 || isNaN(price) || isNaN(cnt)){
             setWranning("단가와 수량을 입력하세요")
             return;
         }
+
         var date = getDate()
         var time = getTime()
         data.time = time
+
+        var todaySold = document.querySelector("#today-sold")
+        var todaySoldInt = todaySold?.textContent?.toString().replace(/[^0-9]/g,'');
+        if(todaySoldInt !== undefined && todaySoldInt !== null){
+            setTS(parseInt(todaySoldInt) + totalPrice)
+            console.log(todaySoldInt + totalPrice)
+            db.collection('wiki').doc('static').collection(date).doc("total sales").set({sold: parseInt(todaySoldInt) + totalPrice})
+        }
+
+        else db.collection('wiki').doc('static').collection(date).doc("total sales").set({sold: 0})
 
         // firebase에 저장
         db.collection('wiki')

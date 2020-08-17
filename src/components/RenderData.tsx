@@ -1,12 +1,12 @@
 import { db } from "../App";
 import { getDate, numberWithCommas } from "../lib/FirebaseData";
 
-var ts = 0
 
 export function renderItem(doc, int, date){
     const itemList = document.querySelector("#item")
     var todaySold = document.querySelector("#today-sold")
-    
+
+    var ts = db.collection('wiki').doc('static').collection(date).doc('total sales')
 
     let li = document.createElement('tr');
     let number = document.createElement('td')
@@ -31,22 +31,15 @@ export function renderItem(doc, int, date){
     delBtn.id = "item-del"
 
     delBtn.addEventListener("click",btnClick,false)
-    function btnClick(e){
+    async function btnClick(e){
         db.collection('wiki').doc('sale').collection(date).doc(doc.id).delete()
-        
+        var beforePrice = await ts.get().then((doc: any) => {
+            return doc.data().sold;
+        })
+        beforePrice -= doc.data().data.totalPrice
+        ts.set({sold: beforePrice})
         setTimeout(()=>window.location.reload(),1000)
     }
-    
-    if(int===1){
-        ts=0
-
-    }
-        
-    ts += doc.data().data.totalPrice
-
-    db.collection('wiki').doc('static').collection(date).doc("total sales").set({
-        sold: ts
-    })
 
     number.textContent = int
     time.textContent = doc.id.slice(0,5)
@@ -72,7 +65,15 @@ export function renderItem(doc, int, date){
 else{
     itemList?.insertBefore(li, itemList.firstChild)
 }
-    if(todaySold){
-        todaySold.textContent= "총 매출: " + numberWithCommas(ts)
-    }
+
+
+   
+    ts.get().then((doc:any)=>{
+        if (doc.exists && todaySold){
+            todaySold.textContent= "총 매출: " + numberWithCommas(doc.data().sold)
+        }
+    })
+    
+
+
 }

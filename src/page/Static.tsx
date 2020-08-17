@@ -10,6 +10,7 @@ import { RecordCategory } from '../components/Category';
 function Static(){
     var today = new Date();
     const [date, setDate] = useState(today);
+    RecordCategory(dateToString(date))
 
     function showSales(date:Date){
         const itemList = document.getElementById("item"); 
@@ -18,6 +19,11 @@ function Static(){
         }
         setDate(date) 
         console.log(date)
+
+        var categorySold = document.querySelector("#category-list")
+        if(categorySold){
+            categorySold.innerHTML=""
+        }
 
         RecordCategory(dateToString(date))
     }
