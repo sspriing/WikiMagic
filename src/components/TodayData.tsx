@@ -1,7 +1,7 @@
 import React, {Component, Fragment, useState} from 'react';
 import {db} from '../App'
 import {getDate} from '../lib/FirebaseData'
-import { renderItem, renderItemNoDelete } from './RenderData';
+import { renderItem} from './RenderData';
 import { useEffect } from 'react';
 
 function TodayData(date){
@@ -10,10 +10,7 @@ function TodayData(date){
      data.then((snapshot:any)=>{
             snapshot.forEach((doc:any)=>{
                 int++
-                if(date.date === getDate())
-                    renderItem(doc,int,date.date)
-                else
-                    renderItemNoDelete(doc,int,date.date)
+                renderItem(doc,int,date.date)
         })
         }
     )

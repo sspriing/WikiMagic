@@ -18,6 +18,12 @@ function RecordSold(){
         <h3>{getDate()}</h3>
       <div className = "input-data">
         <Input/>
+        <div>
+          종목별 매출
+          <table id = "category-sold">
+
+          </table>
+        </div>
       </div>
       
       <div id = "content" >
@@ -53,7 +59,6 @@ function RecordSold(){
             </tbody>
         </table>
         </div>
-
       </div>
         </Fragment>
         

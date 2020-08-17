@@ -5,6 +5,7 @@ import { useState } from 'react'
 import TodayData from '../components/TodayData';
 import { getDate, dateToString } from '../lib/FirebaseData';
 import Monthly from '../components/Monthly';
+import { RecordCategory } from '../components/Category';
 
 function Static(){
     var today = new Date();
@@ -17,6 +18,8 @@ function Static(){
         }
         setDate(date) 
         console.log(date)
+
+        RecordCategory(dateToString(date))
     }
 
     return(
