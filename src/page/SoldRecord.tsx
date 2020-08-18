@@ -2,7 +2,7 @@ import React, {Fragment} from 'react'
 import Input from '../components/Input'
 import TodayData from '../components/TodayData'
 import {getDate} from '../lib/FirebaseData'
-import {Link} from 'react-router-dom'
+import logo from './wikimagic1.png'
 import { RecordCategory } from '../components/Category'
 
 function RecordSold(){
@@ -12,8 +12,8 @@ function RecordSold(){
 
     return(
         <Fragment>
-        <h2>위키매직 판매일보</h2>
-        <h3>{getDate()}</h3>
+        <img src = {logo} height = "100px"/>
+        <h3 style={{marginTop:"5px"}}>{getDate()}</h3>
       <div className = "input-data">
         <Input/>
         <div id = "category-table-wrap">

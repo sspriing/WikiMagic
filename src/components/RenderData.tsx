@@ -69,8 +69,13 @@ else{
 
    
     ts.get().then((doc:any)=>{
-        if (doc.exists && todaySold){
+        if (doc.exists && todaySold&& !isNaN(doc.data().sold)){
             todaySold.textContent= "총 매출: " + numberWithCommas(doc.data().sold)
+        }
+
+        else if(todaySold){
+            db.collection('wiki').doc('static').collection(date).doc("total sales").set({sold: totalPrice.textContent})
+            todaySold.textContent= "총 매출: " + totalPrice.textContent
         }
     })
     

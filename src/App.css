@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  margin-top:30px;
   font-family: 'Noto Sans KR', sans-serif;
+  color: rgb(0, 68, 146);
 }
 
 .App .input-data{
@@ -81,12 +81,13 @@ table{
   margin-left:auto; 
   margin-right:auto;
   table-layout:fixed;
-
+  border-width: 10px;
+  border-color: rgb(0, 41, 226);
 }
 
 table th{
-  background-color: rgb(57, 111, 182);
-  color: #fff;
+  background-color: rgb(255, 238, 0);
+  /* color: #fff; */
   padding-top: 10px;
   padding-bottom: 10px;
   
