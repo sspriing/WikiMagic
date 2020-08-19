@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/WikiMagic/static/css/main.9390a7b1.chunk.css",
-    "main.js": "/WikiMagic/static/js/main.6db60e7c.chunk.js",
-    "main.js.map": "/WikiMagic/static/js/main.6db60e7c.chunk.js.map",
+    "main.css": "/WikiMagic/static/css/main.7077be3a.chunk.css",
+    "main.js": "/WikiMagic/static/js/main.543940c7.chunk.js",
+    "main.js.map": "/WikiMagic/static/js/main.543940c7.chunk.js.map",
     "runtime-main.js": "/WikiMagic/static/js/runtime-main.05bd6a1c.js",
     "runtime-main.js.map": "/WikiMagic/static/js/runtime-main.05bd6a1c.js.map",
     "static/css/2.8dbe6964.chunk.css": "/WikiMagic/static/css/2.8dbe6964.chunk.css",
-    "static/js/2.a2885c63.chunk.js": "/WikiMagic/static/js/2.a2885c63.chunk.js",
-    "static/js/2.a2885c63.chunk.js.map": "/WikiMagic/static/js/2.a2885c63.chunk.js.map",
+    "static/js/2.147168b4.chunk.js": "/WikiMagic/static/js/2.147168b4.chunk.js",
+    "static/js/2.147168b4.chunk.js.map": "/WikiMagic/static/js/2.147168b4.chunk.js.map",
     "index.html": "/WikiMagic/index.html",
-    "precache-manifest.0a39daa925d3686efdcf6674bb07afe5.js": "/WikiMagic/precache-manifest.0a39daa925d3686efdcf6674bb07afe5.js",
+    "precache-manifest.69e8a287b8de3000aa49d67715955708.js": "/WikiMagic/precache-manifest.69e8a287b8de3000aa49d67715955708.js",
     "service-worker.js": "/WikiMagic/service-worker.js",
     "static/css/2.8dbe6964.chunk.css.map": "/WikiMagic/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.9390a7b1.chunk.css.map": "/WikiMagic/static/css/main.9390a7b1.chunk.css.map",
-    "static/js/2.a2885c63.chunk.js.LICENSE.txt": "/WikiMagic/static/js/2.a2885c63.chunk.js.LICENSE.txt"
+    "static/css/main.7077be3a.chunk.css.map": "/WikiMagic/static/css/main.7077be3a.chunk.css.map",
+    "static/js/2.147168b4.chunk.js.LICENSE.txt": "/WikiMagic/static/js/2.147168b4.chunk.js.LICENSE.txt",
+    "static/media/wikimagic1.png": "/WikiMagic/static/media/wikimagic1.f04f82f5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.05bd6a1c.js",
     "static/css/2.8dbe6964.chunk.css",
-    "static/js/2.a2885c63.chunk.js",
-    "static/css/main.9390a7b1.chunk.css",
-    "static/js/main.6db60e7c.chunk.js"
+    "static/js/2.147168b4.chunk.js",
+    "static/css/main.7077be3a.chunk.css",
+    "static/js/main.543940c7.chunk.js"
   ]
 }
