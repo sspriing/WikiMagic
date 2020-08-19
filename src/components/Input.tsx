@@ -94,7 +94,8 @@ function Input(){
 
     return(
         <Fragment>
-                
+                <div style = {{width: "300px", display: "inline-block"}}>
+
                 <select id = "age" className = "select_age" onChange =  {(e)=>{
                     let {name, value} = e.target
                     setAge(value)
@@ -128,7 +129,7 @@ function Input(){
                 <button id = "submit" type = "submit" onClick={sendToFirebase}>입력</button>
                 </div>
                 <div id = "warnning">{warnning}</div>
-                
+                </div>
         </Fragment>
     )
 }

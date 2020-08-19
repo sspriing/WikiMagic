@@ -13,23 +13,29 @@ function RecordSold(){
     return(
         <Fragment>
         <img src = {logo} height = "100px"/>
-        <h3 style={{marginTop:"5px"}}>{getDate()}</h3>
+        <h2 style={{marginTop:"2px", marginBottom: "5px", borderBottom:"5px double rgb(0, 68, 146)", paddingBottom: "5px"}}>{getDate()}</h2>
       <div className = "input-data">
         <Input/>
-        <div id = "category-table-wrap">
-          <p>종목별 매출</p>
-          <table id = "category-list">
+        <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--종목별 매출--</p>
+        <div style = {{marginLeft: "10px"}}>
+          <table>
           <thead>
             <tr>
               <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
             </tr>
           </thead>
           </table>
+        <div id = "category-table-wrap">
+          <table>
+          <tbody id = "category-list">
+          </tbody>
+          </table>
+          </div>
         </div>
       </div>
       
       <div id = "content" >
-        <p id="today-sold">오늘 매출: <TodayData date={today}/></p>
+        <p id="today-sold">총 매출: <TodayData date={today}/></p>
         <table id = "item-list">
         <colgroup>
             <col width = "5%"></col>
