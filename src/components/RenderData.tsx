@@ -34,13 +34,16 @@ export function renderItem(doc, int, date){
 
     delBtn.addEventListener("click",delClick,false)
     async function delClick(e){
-        db.collection('wiki').doc('sale').collection(date).doc(doc.id).delete()
-        var beforePrice = await ts.get().then((doc: any) => {
-            return doc.data().sold;
-        })
-        beforePrice -= doc.data().data.totalPrice
-        ts.set({sold: beforePrice})
-        setTimeout(()=>window.location.reload(),1000)
+        var result = window.confirm("삭제하시겠습니까?")
+        if(result){
+            db.collection('wiki').doc('sale').collection(date).doc(doc.id).delete()
+            var beforePrice = await ts.get().then((doc: any) => {
+                return doc.data().sold;
+            })
+            beforePrice -= doc.data().data.totalPrice
+            ts.set({sold: beforePrice})
+            setTimeout(()=>window.location.reload(),1000)
+        }
     }
 
     refundBtn.addEventListener("click", refundClick, false)
