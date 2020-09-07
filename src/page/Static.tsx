@@ -3,9 +3,10 @@ import React, { Fragment } from 'react'
 import Calendar from 'react-calendar'
 import { useState } from 'react'
 import TodayData from '../components/TodayData';
-import { getDate, dateToString } from '../lib/FirebaseData';
+import { getDate, dateToString, getMonth } from '../lib/FirebaseData';
 import Monthly from '../components/Monthly';
 import { RecordCategory } from '../components/Category';
+import { renderMonthData } from '../components/MonthData';
 
 function Static(){
     var today = new Date();
@@ -24,8 +25,10 @@ function Static(){
         if(categorySold){
             categorySold.innerHTML=""
         }
+        renderMonthData(getMonth(dateToString(date)))
 
         RecordCategory(dateToString(date))
+
     }
 
     return(
@@ -39,7 +42,10 @@ function Static(){
                 margin:"10px",
             }}
         />
-        <Monthly/>
+        {/* <Monthly/> */}
+        <div>
+            <p id = "month-total"></p>
+        </div>
         </div>
 
 

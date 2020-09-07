@@ -11,6 +11,28 @@ export function getDate():string{
     return(strDay) 
 }
 
+export function getMinusDate(day:number):string{
+    var today = new Date()
+    var strDay: string;
+    var dd = String(today.getDate()-day).padStart(2,'0')
+    var mm = String(today.getMonth()+1).padStart(2,'0')
+    var yyyy = today.getFullYear();
+    strDay = yyyy+ "-"+mm+"-"+dd
+    return(strDay) 
+}
+
+export function getMonth(date:string):string{
+    var strMonth:string;
+    strMonth = date.slice(0,7)
+    return strMonth;
+}
+
+export function getDay(date:string):number{
+    var strDay:string;
+    strDay = date.slice(8,10)
+    return parseInt(strDay);
+}
+
 export function dateToString(date:Date):string{
     var strDay: string;
     var dd = String(date.getDate()).padStart(2,'0')

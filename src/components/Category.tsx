@@ -8,7 +8,6 @@ export async function RecordCategory(date){
     var ct = new Map()
     var pr = new Map()
     var total = 0;
-    console.log(date)
 
     let data = await db.collection('wiki').doc('sale').collection(date).get()
     data.forEach((doc:any)=>{
@@ -56,12 +55,5 @@ export async function RecordCategory(date){
 
         int++
     })
-
-    
-    
-    console.log(ct)
-    console.log(pr)
-    console.log(total)
-    
 
 }
