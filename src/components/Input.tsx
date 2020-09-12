@@ -6,7 +6,7 @@ import{getTime, getDate, numberWithCommas} from '../lib/FirebaseData'
 function Input(){
     const [age, setAge] = useState("성인");
     const [price, setPrice] = useState(0);
-    const [category, setCategory] = useState("모자");
+    const [category, setCategory] = useState("마스크 / 마스크줄");
     const [cnt, setCnt] = useState(1);
     const [totalPrice, setTP] = useState(0);
     const [warnning, setWranning] = useState("");
@@ -35,7 +35,6 @@ function Input(){
                 <option value = "선글라스">선글라스</option>
                 <option value = "우양산">우양산</option>
                 <option value = "넥타이">넥타이</option>
-
                 <option value = "매출 누락">매출 누락</option>
             </Fragment>
     }    
