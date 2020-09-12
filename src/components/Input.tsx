@@ -7,7 +7,7 @@ function Input(){
     const [age, setAge] = useState("성인");
     const [price, setPrice] = useState(0);
     const [category, setCategory] = useState("모자");
-    const [cnt, setCnt] = useState(0);
+    const [cnt, setCnt] = useState(1);
     const [totalPrice, setTP] = useState(0);
     const [warnning, setWranning] = useState("");
     const [ts, setTS] = useState(0)
@@ -25,29 +25,30 @@ function Input(){
     if(age === "성인"){
         cat = 
             <Fragment>
+                <option value = "마스크 / 마스크줄">마스크 / 마스크줄</option>
                 <option value = "모자">모자</option>
                 <option value = "양말">양말</option>
-                <option value = "선글라스">선글라스</option>
-                <option value = "헤어밴드">헤어밴드</option>
-                <option value = "헤어핀">헤어핀</option>
-                <option value = "스카프 / 손수건">스카프 / 손수건</option>
                 <option value = "잠옷">잠옷</option>
+                <option value = "헤어핀">헤어핀</option>
+                <option value = "헤어밴드">헤어밴드</option>
+                <option value = "스카프 / 손수건">스카프 / 손수건</option>
+                <option value = "선글라스">선글라스</option>
                 <option value = "우양산">우양산</option>
                 <option value = "넥타이">넥타이</option>
-                <option value = "마스크 / 마스크줄">마스크 / 마스크줄</option>
+
                 <option value = "매출 누락">매출 누락</option>
             </Fragment>
     }    
     if(age === "아동"){
         cat = 
         <Fragment>
-            <option value = "모자">모자</option>
-            <option value = "양말">양말</option>
-            <option value = "선글라스">선글라스</option>
             <option value = "헤어밴드">헤어밴드</option>
-            <option value = "헤어핀">헤어핀</option>
             <option value = "반지">반지</option>
             <option value = "가방">가방</option>
+            <option value = "모자">모자</option>
+            <option value = "양말">양말</option>
+            <option value = "헤어핀">헤어핀</option>
+            <option value = "선글라스">선글라스</option>
             <option value = "기타">기타</option>
         </Fragment>
     }
@@ -118,7 +119,7 @@ function Input(){
                     console.log(cnt)
                     console.log(totalPrice)
                 }}></InputNumber>
-                <InputNumber id = "cnt" placeholder = "수량을 입력하세요" onChange = {(e)=>{
+                <InputNumber id = "cnt" placeholder = "수량을 입력하세요" value = "1" onChange = {(e)=>{
                     setCnt(parseInt(e.target.value))
                     setTP(price*parseInt(e.target.value))
                     console.log(price)

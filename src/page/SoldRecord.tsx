@@ -12,7 +12,7 @@ function RecordSold(){
 
     return(
         <Fragment>
-        <img src = {logo} height = "100px"/>
+        {/* <img src = {logo} height = "100px"/> */}
         <h2 style={{marginTop:"2px", marginBottom: "5px", borderBottom:"5px double rgb(0, 68, 146)", paddingBottom: "5px"}}>{getDate()}</h2>
       <div className = "input-data">
         <Input/>
