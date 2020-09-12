@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/WikiMagic/static/css/main.7077be3a.chunk.css",
-    "main.js": "/WikiMagic/static/js/main.bbba29a0.chunk.js",
-    "main.js.map": "/WikiMagic/static/js/main.bbba29a0.chunk.js.map",
+    "main.css": "/WikiMagic/static/css/main.9f4a16c2.chunk.css",
+    "main.js": "/WikiMagic/static/js/main.4e8cf8d8.chunk.js",
+    "main.js.map": "/WikiMagic/static/js/main.4e8cf8d8.chunk.js.map",
     "runtime-main.js": "/WikiMagic/static/js/runtime-main.05bd6a1c.js",
     "runtime-main.js.map": "/WikiMagic/static/js/runtime-main.05bd6a1c.js.map",
-    "static/css/2.8dbe6964.chunk.css": "/WikiMagic/static/css/2.8dbe6964.chunk.css",
-    "static/js/2.eb2482cc.chunk.js": "/WikiMagic/static/js/2.eb2482cc.chunk.js",
-    "static/js/2.eb2482cc.chunk.js.map": "/WikiMagic/static/js/2.eb2482cc.chunk.js.map",
+    "static/css/2.a05dab16.chunk.css": "/WikiMagic/static/css/2.a05dab16.chunk.css",
+    "static/js/2.fc9202c8.chunk.js": "/WikiMagic/static/js/2.fc9202c8.chunk.js",
+    "static/js/2.fc9202c8.chunk.js.map": "/WikiMagic/static/js/2.fc9202c8.chunk.js.map",
     "index.html": "/WikiMagic/index.html",
-    "precache-manifest.8fd4aec9b3f43cdfdd1b7bcb97e57fb1.js": "/WikiMagic/precache-manifest.8fd4aec9b3f43cdfdd1b7bcb97e57fb1.js",
+    "precache-manifest.d28dd26f9830281da1a1aefd8ad5b16e.js": "/WikiMagic/precache-manifest.d28dd26f9830281da1a1aefd8ad5b16e.js",
     "service-worker.js": "/WikiMagic/service-worker.js",
-    "static/css/2.8dbe6964.chunk.css.map": "/WikiMagic/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.7077be3a.chunk.css.map": "/WikiMagic/static/css/main.7077be3a.chunk.css.map",
-    "static/js/2.eb2482cc.chunk.js.LICENSE.txt": "/WikiMagic/static/js/2.eb2482cc.chunk.js.LICENSE.txt",
-    "static/media/wikimagic1.png": "/WikiMagic/static/media/wikimagic1.f04f82f5.png"
+    "static/css/2.a05dab16.chunk.css.map": "/WikiMagic/static/css/2.a05dab16.chunk.css.map",
+    "static/css/main.9f4a16c2.chunk.css.map": "/WikiMagic/static/css/main.9f4a16c2.chunk.css.map",
+    "static/js/2.fc9202c8.chunk.js.LICENSE.txt": "/WikiMagic/static/js/2.fc9202c8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.05bd6a1c.js",
-    "static/css/2.8dbe6964.chunk.css",
-    "static/js/2.eb2482cc.chunk.js",
-    "static/css/main.7077be3a.chunk.css",
-    "static/js/main.bbba29a0.chunk.js"
+    "static/css/2.a05dab16.chunk.css",
+    "static/js/2.fc9202c8.chunk.js",
+    "static/css/main.9f4a16c2.chunk.css",
+    "static/js/main.4e8cf8d8.chunk.js"
   ]
 }
