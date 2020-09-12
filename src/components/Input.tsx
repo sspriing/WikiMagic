@@ -118,12 +118,21 @@ function Input(){
                     console.log(cnt)
                     console.log(totalPrice)
                 }}></InputNumber>
-                <InputNumber id = "cnt" placeholder = "수량을 입력하세요" value = "1" onChange = {(e)=>{
-                    setCnt(parseInt(e.target.value))
-                    setTP(price*parseInt(e.target.value))
-                    console.log(price)
-                    console.log(cnt)
-                    console.log(totalPrice)
+                <InputNumber id = "cnt" placeholder = "1 (기본값)" onChange = {(e)=>{
+                    
+                    console.log(typeof(e.target.value))
+                    if(e.target.value=== undefined || isNaN(e.target.value) || e.target.value === "") {
+                        setCnt(1)
+                        setTP(price)
+                    }
+                    else{
+                        setCnt(parseInt(e.target.value))
+                        setTP(price*parseInt(e.target.value))
+                        console.log(price)
+                        console.log(cnt)
+                        console.log(totalPrice)
+                    }
+
                 }}></InputNumber>
                 <div id = "totalPrice" >총 금액: {numberWithCommas(totalPrice)}
                 <button id = "submit" type = "submit" onClick={sendToFirebase}>입력</button>
