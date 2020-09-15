@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/WikiMagic/static/css/main.9f4a16c2.chunk.css",
-    "main.js": "/WikiMagic/static/js/main.68bd7012.chunk.js",
-    "main.js.map": "/WikiMagic/static/js/main.68bd7012.chunk.js.map",
+    "main.js": "/WikiMagic/static/js/main.86706c72.chunk.js",
+    "main.js.map": "/WikiMagic/static/js/main.86706c72.chunk.js.map",
     "runtime-main.js": "/WikiMagic/static/js/runtime-main.05bd6a1c.js",
     "runtime-main.js.map": "/WikiMagic/static/js/runtime-main.05bd6a1c.js.map",
     "static/css/2.a05dab16.chunk.css": "/WikiMagic/static/css/2.a05dab16.chunk.css",
-    "static/js/2.fc9202c8.chunk.js": "/WikiMagic/static/js/2.fc9202c8.chunk.js",
-    "static/js/2.fc9202c8.chunk.js.map": "/WikiMagic/static/js/2.fc9202c8.chunk.js.map",
+    "static/js/2.7a111c96.chunk.js": "/WikiMagic/static/js/2.7a111c96.chunk.js",
+    "static/js/2.7a111c96.chunk.js.map": "/WikiMagic/static/js/2.7a111c96.chunk.js.map",
     "index.html": "/WikiMagic/index.html",
-    "precache-manifest.982ac0899ac30b7ae2712dc9a2038aa4.js": "/WikiMagic/precache-manifest.982ac0899ac30b7ae2712dc9a2038aa4.js",
+    "precache-manifest.2faeff0ae14eaf5dfd2e80838c725e2d.js": "/WikiMagic/precache-manifest.2faeff0ae14eaf5dfd2e80838c725e2d.js",
     "service-worker.js": "/WikiMagic/service-worker.js",
     "static/css/2.a05dab16.chunk.css.map": "/WikiMagic/static/css/2.a05dab16.chunk.css.map",
     "static/css/main.9f4a16c2.chunk.css.map": "/WikiMagic/static/css/main.9f4a16c2.chunk.css.map",
-    "static/js/2.fc9202c8.chunk.js.LICENSE.txt": "/WikiMagic/static/js/2.fc9202c8.chunk.js.LICENSE.txt"
+    "static/js/2.7a111c96.chunk.js.LICENSE.txt": "/WikiMagic/static/js/2.7a111c96.chunk.js.LICENSE.txt",
+    "static/media/wikimagic1.png": "/WikiMagic/static/media/wikimagic1.f04f82f5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.05bd6a1c.js",
     "static/css/2.a05dab16.chunk.css",
-    "static/js/2.fc9202c8.chunk.js",
+    "static/js/2.7a111c96.chunk.js",
     "static/css/main.9f4a16c2.chunk.css",
-    "static/js/main.68bd7012.chunk.js"
+    "static/js/main.86706c72.chunk.js"
   ]
 }
