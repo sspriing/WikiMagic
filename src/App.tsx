@@ -7,6 +7,7 @@ import Purchase from './page/Purchase';
 import WritePurchaseRecord from './page/WritePurchaseRecord';
 import ShowPurchaseRecord from './page/ShowPurchaseRecord'
 import Static from './page/Static';
+import TestRecordSold from './test/test'
 import 'react-calendar/dist/Calendar.css'
 
 
@@ -32,6 +33,7 @@ const App=()=> {
         <HashRouter>
             <Route path = "/purchase" component = {Purchase}/>
             <Route path = "/static" component = {Static}/>
+            <Route path="/test" component = {TestRecordSold}/>
             <Route path = "/write-purchase-record" component = {WritePurchaseRecord}/>
             <Route path = "/show-purchase-record" component = {ShowPurchaseRecord}/>
             <Route excat path = "/home" component = {RecordSold}/>

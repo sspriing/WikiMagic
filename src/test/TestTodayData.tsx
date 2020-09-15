@@ -1,17 +1,15 @@
 import React, {Component, Fragment, useState} from 'react';
 import {db} from '../App'
 import {getDate} from '../lib/FirebaseData'
-import { renderItem, testRenderItem} from './RenderData';
-import { useEffect } from 'react';
+import {testRenderItem} from '../components/RenderData';
 
-
-function TodayData(date){
+function TestTodayData(date){
     let int = 0
     let data = db.collection('wiki').doc('sale').collection(date.date).get()
      data.then((snapshot:any)=>{
             snapshot.forEach((doc:any)=>{
                 int++
-                renderItem(doc,int,date.date)
+                testRenderItem(doc,int,date.date)
         })
         }
     )
@@ -23,4 +21,4 @@ function TodayData(date){
     )
 }
 
-export default TodayData
+export default TestTodayData
