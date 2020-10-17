@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb98a308d3e02a52ae6cf2b754bf26e7",
+    "revision": "e95bd9d0daa180315a98fce8f07ee6f0",
     "url": "/WikiMagic/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WikiMagic/static/css/2.a05dab16.chunk.css"
   },
   {
-    "revision": "772bd35c00873fe53b2a",
+    "revision": "fc76636d6b0b8f447355",
     "url": "/WikiMagic/static/css/main.9f4a16c2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WikiMagic/static/js/2.7a111c96.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "772bd35c00873fe53b2a",
-    "url": "/WikiMagic/static/js/main.c449d79d.chunk.js"
+    "revision": "fc76636d6b0b8f447355",
+    "url": "/WikiMagic/static/js/main.e3afdad3.chunk.js"
   },
   {
     "revision": "49b2810e7dfc72194ead",
