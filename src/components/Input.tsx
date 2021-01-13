@@ -3,10 +3,11 @@ import {db} from '../App'
 import InputNumber from 'react-input-just-numbers';
 import{getTime, getDate, numberWithCommas} from '../lib/FirebaseData'
 
+//판매항목 입력부분
 function Input(){
     const [age, setAge] = useState("성인");
     const [price, setPrice] = useState(0);
-    const [category, setCategory] = useState("마스크 / 마스크줄");
+    const [category, setCategory] = useState("양말");
     const [cnt, setCnt] = useState(1);
     const [totalPrice, setTP] = useState(0);
     const [warnning, setWranning] = useState("");
@@ -25,13 +26,15 @@ function Input(){
     if(age === "성인"){
         cat = 
             <Fragment>
-                <option value = "마스크 / 마스크줄">마스크 / 마스크줄</option>
-                <option value = "모자">모자</option>
                 <option value = "양말">양말</option>
+                <option value = "모자">모자</option>
+                <option value = "스카프 / 손수건">머플러</option>
+                <option value = "숄">숄</option>
+                <option value = "장갑">장갑</option>
+                <option value = "마스크 / 마스크줄">마스크 / 마스크줄</option>
                 <option value = "잠옷">잠옷</option>
                 <option value = "헤어핀">헤어핀</option>
                 <option value = "헤어밴드">헤어밴드</option>
-                <option value = "스카프 / 손수건">스카프 / 손수건</option>
                 <option value = "선글라스">선글라스</option>
                 <option value = "우양산">우양산</option>
                 <option value = "넥타이">넥타이</option>

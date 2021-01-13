@@ -5,6 +5,8 @@ import {getDate} from '../lib/FirebaseData'
 import logo from './wikimagic1.png'
 import { RecordCategory } from '../components/Category'
 
+
+//http://localhost:3000/WikiMagic#/home
 function RecordSold(){
   const today: string = getDate()
   

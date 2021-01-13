@@ -5,14 +5,19 @@ import { useState } from 'react'
 import TodayData from '../components/TodayData';
 import { getDate, dateToString, getMonth } from '../lib/FirebaseData';
 import Monthly from '../components/Monthly';
-import { RecordCategory } from '../components/Category';
+import { RecordCategory, RecordMonthlyCategory } from '../components/Category';
 import { renderMonthData } from '../components/MonthData';
+import Input from '../components/Input';
 
+
+//http://localhost:3000/WikiMagic#/static
 function Static(){
     var today = new Date();
     const [date, setDate] = useState(today);
-    RecordCategory(dateToString(date))
+    // RecordCategory(dateToString(date))
 
+    //달력 날짜 클릭시 발생하는 이벤트
+    //데이터 호출 컴포넌트에 날짜정보 넘겨주고 테이블내용 리셋시킨다
     function showSales(date:Date){
         const itemList = document.getElementById("item"); 
         if(itemList){
@@ -25,9 +30,14 @@ function Static(){
         if(categorySold){
             categorySold.innerHTML=""
         }
+        var monthCategorySold = document.querySelector("#month-category-list")
+        if(monthCategorySold){
+          monthCategorySold.innerHTML=""
+        }
         renderMonthData(getMonth(dateToString(date)))
 
         RecordCategory(dateToString(date))
+        RecordMonthlyCategory(dateToString(date))
 
     }
 
@@ -47,7 +57,43 @@ function Static(){
             <p id = "month-total"></p>
         </div>
         </div>
+        <div className = "input-data">
+        <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--일별 종목별 매출--</p>
+        <div style = {{marginLeft: "10px"}}>
+          <table>
+          <thead>
+            <tr>
+              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
+            </tr>
+          </thead>
+          </table>
+        <div id = "category-table-wrap">
+          <table>
+          <tbody id = "category-list">
+          </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
 
+      <div className = "input-data">
+        <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--월별 종목별 매출--</p>
+        <div style = {{marginLeft: "10px"}}>
+          <table>
+          <thead>
+            <tr>
+              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
+            </tr>
+          </thead>
+          </table>
+        <div id = "category-table-wrap">
+          <table>
+          <tbody id = "month-category-list">
+          </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
 
        <p id="today-sold">매출: <TodayData date={dateToString(date)}/></p>
         <table id = "item-list">
