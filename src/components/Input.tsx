@@ -31,6 +31,7 @@ function Input(){
                 <option value = "스카프 / 손수건">머플러</option>
                 <option value = "숄">숄</option>
                 <option value = "장갑">장갑</option>
+                <option value = "귀마개">귀마개</option>
                 <option value = "마스크 / 마스크줄">마스크 / 마스크줄</option>
                 <option value = "잠옷">잠옷</option>
                 <option value = "헤어핀">헤어핀</option>
