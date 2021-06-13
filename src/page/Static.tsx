@@ -57,10 +57,10 @@ function Static(){
             <p id = "month-total"></p>
         </div>
         </div>
-        <div className = "input-data" style = {{marginRight:"5vw"}}>
+        <div className = "input-data" style = {{marginRight:"2vw", display:"table"}}>
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--일별 종목별 매출--</p>
         <div style = {{marginLeft: "10px"}}>
-          <table style = {{width:"44vw", minWidth:"310px"}}>
+          <table style = {{width:"44vw", minWidth:"310px", display:"table"}}>
           <thead>
             <tr>
               <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
@@ -76,7 +76,7 @@ function Static(){
         </div>
       </div>
 
-      <div className = "input-data" >
+      <div className = "input-data" style = {{display:"table"}}>
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--월별 종목별 매출--</p>
         <div style = {{marginLeft: "10px"}}>
           <table style = {{width:"44vw", minWidth:"310px"}}>
@@ -99,7 +99,7 @@ function Static(){
        <div style = {{height:"40px", width:"100%", display:"inline-block"}}>       
           <p id="today-sold" style = {{marginRight:"40px"}}>매출: <TodayData date={dateToString(date)}/></p>
       </div>
-        <table id = "item-list" >
+        <table id = "item-list" style = {{width:"95vw", marginLeft:"10px"}} >
           <thead>
             <tr>
               <th>번호</th><th>판매시간</th><th>상품명</th><th>수량</th><th>단가</th><th>총금액</th><th>삭제</th>

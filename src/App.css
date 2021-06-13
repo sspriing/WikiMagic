@@ -92,9 +92,9 @@
 }
 
 #item-list{
-  margin-left:10px;
+  /* margin-left:10px; */
   margin-right:10px;
-  width:95vw;
+  width:55vw;
   min-width:310px
 }
 
@@ -150,6 +150,16 @@ table tbody tr:nth-child(2n){
     margin-top: 10px;
     float: left;
     width: 95vw;
+  }
+
+  #item-list{
+    /* margin-left:10px; */
+    margin-right:10px;
+    width:100%;
+    min-width:310px
+  }
+  table thead{
+    width:98vw
   }
   
   }
