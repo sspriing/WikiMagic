@@ -72,6 +72,7 @@
     font-size: 20px;
     margin-bottom: 5px;
     margin-top: 10px;
+    margin-right:10px;
 }
 
 #table-wrap{
@@ -87,6 +88,14 @@
   height:fit-content;
   max-height: 165px;
   overflow-y: auto;
+  margin-top:0px;
+}
+
+#item-list{
+  margin-left:10px;
+  margin-right:10px;
+  width:95vw;
+  min-width:310px
 }
 
 table{
@@ -111,6 +120,10 @@ table tbody{
   overflow-y: auto;
   width: 100%;
   scroll-behavior: smooth;
+}
+
+table thead{
+  margin-top:10px;
 }
 
 table tbody tr:nth-child(2n+1){
