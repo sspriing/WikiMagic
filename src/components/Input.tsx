@@ -70,7 +70,7 @@ function Input(){
         var todaySoldInt = todaySold?.textContent?.toString().replace(/[^0-9]/g,'');
         if(todaySoldInt !== undefined && todaySoldInt !== null){
             setTS(parseInt(todaySoldInt) + totalPrice)
-            console.log(todaySoldInt + totalPrice)
+            console.log(parseInt(todaySoldInt) + totalPrice)
             db.collection('wiki').doc('static').collection(date).doc("total sales").set({sold: parseInt(todaySoldInt) + totalPrice})
         }
 
@@ -81,19 +81,27 @@ function Input(){
             .doc('sale')
             .collection(date)
             .doc(time)
-            .set({data})
+            .set({data}).then(doc=>{
+                                    console.log("setting")
+                                    console.log(data)
+                                    window.location.reload(true)
+                                })
+        
+        
 
         //저장이 되었는지 확인 후 reload
-        db.collection('wiki')
-            .doc('sale')
-            .collection(date)
-            .doc(time)
-            .get()
-            .then(
-                doc =>{
-                    window.location.reload(false)
-                }
-            )
+        // db.collection('wiki')
+        //     .doc('sale')
+        //     .collection(date)
+        //     .doc(time)
+        //     .get()
+        //     .then(
+        //         doc =>{
+        //             // window.location.reload(true)
+        //             // // console.log("okdokey")
+        //             // console.log(doc)
+        //         }
+        //     )
     }
 
     return(
@@ -118,9 +126,9 @@ function Input(){
                 <InputNumber id = "price" placeholder = "단가를 입력하세요" onChange = {(e)=>{
                     setPrice(parseInt(e.target.value))
                     setTP(parseInt(e.target.value)*cnt)
-                    console.log(price)
-                    console.log(cnt)
-                    console.log(totalPrice)
+                    // console.log(price)
+                    // console.log(cnt)
+                    // console.log(totalPrice)
                 }}></InputNumber>
                 <InputNumber id = "cnt" placeholder = "1 (기본값)" onChange = {(e)=>{
                     
