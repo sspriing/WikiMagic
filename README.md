@@ -1,6 +1,5 @@
-# WikiMagic
-매출 기록 및 관리용 사이트
-
+# 🔮WikiMagic🎩
+매출 기록 및 관리용 사이트 [🔗HOMEPAGE](https://sspriing.github.io/WikiMagic/#/home)
 
 ## 빌드방법
 
