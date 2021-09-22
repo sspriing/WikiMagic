@@ -122,7 +122,7 @@ function TestRecordSold(){
     return(
         <Fragment>
         <img src = {logo} height = "100px"/>
-        <h2 style={{marginTop:"2px", marginBottom: "5px", borderBottom:"5px double rgb(0, 68, 146)", paddingBottom: "5px"}}>{getDate()}</h2>
+        <h2 style={{marginTop:"2px", marginBottom: "5px", borderBottom:"5px double", paddingBottom: "5px"}}>{getDate()}</h2>
       <div className = "input-data">
         <TestInput/>
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--종목별 매출--</p>

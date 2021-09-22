@@ -44,20 +44,16 @@ function Static(){
     return(
     <Fragment>
         <div>
-        <Calendar 
+        <Calendar className={['c1','c2']}
             onChange ={(date:any)=> showSales(date)} 
             value = {date}
-            style={{
-                display:"inline-block", 
-                margin:"10px",
-            }}
         />
         {/* <Monthly/> */}
         <div>
             <p id = "month-total"></p>
         </div>
         </div>
-        <div className = "input-data" style = {{marginRight:"2vw", display:"table",width:"47vw", minWidth:"310px", }}>
+        <div className = "input-data" >
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--일별 종목별 매출--</p>
         <div style = {{marginLeft: "10px"}}>
           <table>
@@ -76,7 +72,7 @@ function Static(){
         </div>
       </div>
 
-      <div className = "input-data" style = {{display:"table",width:"47vw", minWidth:"310px", }}>
+      <div className = "input-data" >
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--월별 종목별 매출--</p>
         <div style = {{marginLeft: "10px"}}>
           <table>
