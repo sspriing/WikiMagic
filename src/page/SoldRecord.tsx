@@ -16,7 +16,7 @@ function RecordSold(){
         <Fragment>
         {/* <img src = {logo} height = "100px"/> */}
         <h2 style={{marginTop:"2px", marginBottom: "5px", borderBottom:"5px double", paddingBottom: "5px"}}>{getDate()}</h2>
-      <div className = "input-data">
+      <div className = "input-data1">
         <Input/>
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--종목별 매출--</p>
         <div style = {{marginLeft: "10px"}}>

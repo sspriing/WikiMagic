@@ -21,6 +21,16 @@
     min-width: 350px;
 }
 
+.App .input-data1{
+  height:fit-content;
+  margin-top: 30px;
+  margin:auto;
+  text-align: center;
+  float: left;
+  width: 37vw;
+  min-width: 450px;
+}
+
 .App .input-data select{
   margin:5px;
   height:45px;
@@ -32,6 +42,27 @@
 }
 
 .App .input-data input{
+  margin:5px;
+  height:37px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border:rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  padding: 0px 10px 0px 10px;
+}
+
+.App .input-data1 select{
+  margin:5px;
+  height:45px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border:rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.App .input-data1 input{
   margin:5px;
   height:37px;
   font-size: 20px;
