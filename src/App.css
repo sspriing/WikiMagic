@@ -28,7 +28,7 @@
   text-align: center;
   float: left;
   width: 37vw;
-  min-width: 450px;
+  min-width: 350px;
 }
 
 .App .input-data select{
@@ -183,7 +183,7 @@ table tbody tr:nth-child(2n){
   /* font-family: Arial, Helvetica, sans-serif; */
   line-height: 1.125em;
   margin: 10px;
-  display: inline-block;
+  display: inline-table;
 }
 
 @media screen and (max-width: 700px) {
@@ -199,6 +199,28 @@ table tbody tr:nth-child(2n){
   }
 
   .App .input-data{
+    /* height: 200px; */
+    /* display: contents; */
+    height:fit-content;
+    margin-top: 30px;
+    margin-left: auto;
+    text-align: center;
+    /* float: left; */
+    width: 98vw;
+  }
+
+  .input-data1{
+    /* height: 200px; */
+    /* display: contents; */
+    height:fit-content;
+    margin-top: 30px;
+    margin-left: auto;
+    text-align: center;
+    /* float: left; */
+    width: 98vw;
+  }
+
+  .App .input-data1{
     /* height: 200px; */
     /* display: contents; */
     height:fit-content;
