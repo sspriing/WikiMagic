@@ -123,14 +123,14 @@ function Input(){
                     {cat}
                 </select>
 
-                <InputNumber id = "price" placeholder = "단가를 입력하세요" onChange = {(e)=>{
+                <InputNumber style = {{width:"250px"}} id = "price" placeholder = "단가를 입력하세요" onChange = {(e)=>{
                     setPrice(parseInt(e.target.value))
                     setTP(parseInt(e.target.value)*cnt)
                     // console.log(price)
                     // console.log(cnt)
                     // console.log(totalPrice)
                 }}></InputNumber>
-                <InputNumber id = "cnt" placeholder = "1 (기본값)" onChange = {(e)=>{
+                <InputNumber style = {{width:"250px"}} id = "cnt" placeholder = "1 (기본값)" onChange = {(e)=>{
                     
                     console.log(typeof(e.target.value))
                     if(e.target.value=== undefined || isNaN(e.target.value) || e.target.value === "") {
