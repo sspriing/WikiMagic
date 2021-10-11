@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/WikiMagic/static/css/main.aa220f09.chunk.css",
-    "main.js": "/WikiMagic/static/js/main.bf287cb8.chunk.js",
-    "main.js.map": "/WikiMagic/static/js/main.bf287cb8.chunk.js.map",
+    "main.css": "/WikiMagic/static/css/main.40347d49.chunk.css",
+    "main.js": "/WikiMagic/static/js/main.ea12d4cf.chunk.js",
+    "main.js.map": "/WikiMagic/static/js/main.ea12d4cf.chunk.js.map",
     "runtime-main.js": "/WikiMagic/static/js/runtime-main.05bd6a1c.js",
     "runtime-main.js.map": "/WikiMagic/static/js/runtime-main.05bd6a1c.js.map",
-    "static/css/2.8dbe6964.chunk.css": "/WikiMagic/static/css/2.8dbe6964.chunk.css",
+    "static/css/2.a05dab16.chunk.css": "/WikiMagic/static/css/2.a05dab16.chunk.css",
     "static/js/2.9960154f.chunk.js": "/WikiMagic/static/js/2.9960154f.chunk.js",
     "static/js/2.9960154f.chunk.js.map": "/WikiMagic/static/js/2.9960154f.chunk.js.map",
     "index.html": "/WikiMagic/index.html",
-    "precache-manifest.9963f376071f4cefa9085580c8ab9088.js": "/WikiMagic/precache-manifest.9963f376071f4cefa9085580c8ab9088.js",
+    "precache-manifest.c77c5a7d59e2ca4cb10c5fe4f6fc659b.js": "/WikiMagic/precache-manifest.c77c5a7d59e2ca4cb10c5fe4f6fc659b.js",
     "service-worker.js": "/WikiMagic/service-worker.js",
-    "static/css/2.8dbe6964.chunk.css.map": "/WikiMagic/static/css/2.8dbe6964.chunk.css.map",
-    "static/css/main.aa220f09.chunk.css.map": "/WikiMagic/static/css/main.aa220f09.chunk.css.map",
+    "static/css/2.a05dab16.chunk.css.map": "/WikiMagic/static/css/2.a05dab16.chunk.css.map",
+    "static/css/main.40347d49.chunk.css.map": "/WikiMagic/static/css/main.40347d49.chunk.css.map",
     "static/js/2.9960154f.chunk.js.LICENSE.txt": "/WikiMagic/static/js/2.9960154f.chunk.js.LICENSE.txt",
     "static/media/wikimagic1.png": "/WikiMagic/static/media/wikimagic1.f04f82f5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.05bd6a1c.js",
-    "static/css/2.8dbe6964.chunk.css",
+    "static/css/2.a05dab16.chunk.css",
     "static/js/2.9960154f.chunk.js",
-    "static/css/main.aa220f09.chunk.css",
-    "static/js/main.bf287cb8.chunk.js"
+    "static/css/main.40347d49.chunk.css",
+    "static/js/main.ea12d4cf.chunk.js"
   ]
 }
