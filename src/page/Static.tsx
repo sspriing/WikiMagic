@@ -55,7 +55,7 @@ function Static(){
         </div>
         <div className = "input-data" >
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--일별 종목별 매출--</p>
-        <div style = {{marginLeft: "10px"}}>
+        <div style = {{marginLeft: "20px"}}>
           <table>
           <thead>
             <tr>
@@ -74,7 +74,7 @@ function Static(){
 
       <div className = "input-data" >
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--월별 종목별 매출--</p>
-        <div style = {{marginLeft: "10px"}}>
+        <div style = {{marginLeft: "20px"}}>
           <table>
           <thead>
             <tr>
