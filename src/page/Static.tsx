@@ -59,7 +59,7 @@ function Static(){
           <table>
           <thead>
             <tr>
-              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
+              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th><th>비율</th>
             </tr>
           </thead>
           </table>
@@ -78,7 +78,7 @@ function Static(){
           <table>
           <thead>
             <tr>
-              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
+              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th><th>비율</th>
             </tr>
           </thead>
           </table>

@@ -41,16 +41,19 @@ export async function RecordCategory(date){
         let name = document.createElement('td')
         let cnt = document.createElement('td')
         let price = document.createElement('td')
+        let percent = document.createElement('td')
 
         rank.textContent = int.toString()
         name.textContent = key
         cnt.textContent = numberWithCommas(ct.get(key))
         price.textContent = numberWithCommas(value)
+        percent.textContent = (value / total*100).toString().slice(0,4) + "%"
 
         tr.appendChild(rank)
         tr.appendChild(name)
         tr.appendChild(price)
         tr.appendChild(cnt)
+        tr.appendChild(percent)
 
         categorySold?.appendChild(tr)
 
@@ -116,16 +119,19 @@ export async function RecordMonthlyCategory(date){
         let name = document.createElement('td')
         let cnt = document.createElement('td')
         let price = document.createElement('td')
+        let percent = document.createElement('td')
 
         rank.textContent = int.toString()
         name.textContent = key
         cnt.textContent = numberWithCommas(ct.get(key))
         price.textContent = numberWithCommas(value)
+        percent.textContent = (value / total*100).toString().slice(0,4) + "%"
 
         tr.appendChild(rank)
         tr.appendChild(name)
         tr.appendChild(price)
         tr.appendChild(cnt)
+        tr.appendChild(percent)
 
         categorySold?.appendChild(tr)
 
