@@ -40,7 +40,7 @@ function RecordSold(){
         <p id="today-sold">총 매출: <TodayData date={today}/></p>
         <table id = "item-list">
         <colgroup>
-            <col width = "5%"></col>
+            <col width = "3%"></col>
             <col width = "10%"></col>
             <col width = "10%"></col>
             <col width = "5%"></col>
@@ -57,7 +57,7 @@ function RecordSold(){
         <div id = "table-wrap">
         <table id = "item-list">
           <colgroup>
-            <col width = "5%"></col>
+            <col width = "3%"></col>
             <col width = "10%"></col>
             <col width = "10%"></col>
             <col width = "5%"></col>
