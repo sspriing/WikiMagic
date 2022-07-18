@@ -15,7 +15,7 @@ function RecordSold(){
     return(
         <Fragment>
         {/* <img src = {logo} height = "100px"/> */}
-        <h2 style={{marginTop:"2px", marginBottom: "5px", borderBottom:"5px double", paddingBottom: "5px"}}>{getDate()}</h2>
+        <h2 style={{marginTop:"2px", marginBottom: "5px", borderBottom:"5px double", paddingBottom: "5px", width:"100vw"}}>{getDate()}</h2>
       <div className = "input-data1">
         <Input/>
         <p style = {{fontSize:"20px", marginTop:"15px", marginBottom:"2px"}}>--종목별 매출--</p>
@@ -23,7 +23,7 @@ function RecordSold(){
           <table>
           <thead>
             <tr>
-              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th>
+              <th>순위</th><th>카테고리</th><th>판매금액</th><th>수량</th><th>비율</th>
             </tr>
           </thead>
           </table>
@@ -40,7 +40,7 @@ function RecordSold(){
         <p id="today-sold">총 매출: <TodayData date={today}/></p>
         <table id = "item-list">
         <colgroup>
-            <col width = "5%"></col>
+            <col width = "3%"></col>
             <col width = "10%"></col>
             <col width = "10%"></col>
             <col width = "5%"></col>
@@ -57,7 +57,7 @@ function RecordSold(){
         <div id = "table-wrap">
         <table id = "item-list">
           <colgroup>
-            <col width = "5%"></col>
+            <col width = "3%"></col>
             <col width = "10%"></col>
             <col width = "10%"></col>
             <col width = "5%"></col>
