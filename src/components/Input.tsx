@@ -28,17 +28,17 @@ function Input(){
             <Fragment>
                 <option value = "양말">양말</option>
                 <option value = "모자">모자</option>
+                <option value = "스카프 / 손수건">머플러</option>
+                <option value = "숄">숄</option>
+                <option value = "장갑">장갑</option>
+                <option value = "귀마개">귀마개</option>
+                <option value = "마스크 / 마스크줄">마스크 / 마스크줄</option>
+                <option value = "잠옷">잠옷</option>
                 <option value = "헤어핀">헤어핀</option>
-                <option value = "헤어링">헤어링</option>
                 <option value = "헤어밴드">헤어밴드</option>
-                <option value = "손수건">손수건</option>
-                <option value = "스카프">스카프</option>
-                <option value = "원피스">원피스</option>
-                <option value = "바지">바지</option>
-                <option value = "잠옷세트">잠옷세트</option>
                 <option value = "선글라스">선글라스</option>
                 <option value = "우양산">우양산</option>
-                <option value = "가방">가방</option>
+                <option value = "넥타이">넥타이</option>
                 <option value = "매출 누락">매출 누락</option>
             </Fragment>
     }    
@@ -47,10 +47,12 @@ function Input(){
         <Fragment>
             <option value = "헤어밴드">헤어밴드</option>
             <option value = "반지">반지</option>
-            <option value = "시계">시계</option>
             <option value = "가방">가방</option>
+            <option value = "모자">모자</option>
+            <option value = "양말">양말</option>
+            <option value = "헤어핀">헤어핀</option>
+            <option value = "선글라스">선글라스</option>
             <option value = "기타">기타</option>
-            <option value = "메출누락">매출누락</option>
         </Fragment>
     }
 
@@ -82,7 +84,7 @@ function Input(){
             .set({data}).then(doc=>{
                                     console.log("setting")
                                     console.log(data)
-                                    window.location.reload(true)
+                                    window.location.reload()
                                 })
         
         
