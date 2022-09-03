@@ -23,36 +23,24 @@ function Input(){
     }
 
     var cat
-    if(age === "성인"){
-        cat = 
-            <Fragment>
-                <option value = "양말">양말</option>
-                <option value = "모자">모자</option>
-                <option value = "헤어핀">헤어핀</option>
-                <option value = "헤어링">헤어링</option>
-                <option value = "헤어밴드">헤어밴드</option>
-                <option value = "손수건">손수건</option>
-                <option value = "스카프">스카프</option>
-                <option value = "원피스">원피스</option>
-                <option value = "바지">바지</option>
-                <option value = "잠옷세트">잠옷세트</option>
-                <option value = "선글라스">선글라스</option>
-                <option value = "우양산">우양산</option>
-                <option value = "가방">가방</option>
-                <option value = "매출 누락">매출 누락</option>
-            </Fragment>
-    }    
-    if(age === "아동"){
-        cat = 
-        <Fragment>
-            <option value = "헤어밴드">헤어밴드</option>
-            <option value = "반지">반지</option>
-            <option value = "시계">시계</option>
-            <option value = "가방">가방</option>
-            <option value = "기타">기타</option>
-            <option value = "메출누락">매출누락</option>
-        </Fragment>
-    }
+        cat = <Fragment>
+                    <option value = "양말">양말</option>
+                    <option value = "모자">모자</option>
+                    <option value = "헤어핀">헤어핀</option>
+                    <option value = "헤어링">헤어링</option>
+                    <option value = "헤어밴드">헤어밴드</option>
+                    <option value = "손수건">손수건</option>
+                    <option value = "스카프">스카프</option>
+                    <option value = "원피스">원피스</option>
+                    <option value = "바지">바지</option>
+                    <option value = "잠옷세트">잠옷세트</option>
+                    <option value = "선글라스">선글라스</option>
+                    <option value = "우양산">우양산</option>
+                    <option value = "가방">가방</option>
+                    <option value = "방향제">방향제</option>
+                    <option value = "매출 누락">매출 누락</option>
+                </Fragment>
+    
 
     async function sendToFirebase(){
         if(price === undefined || cnt === undefined || price ===0 || cnt ===0 || isNaN(price) || isNaN(cnt)){
@@ -111,7 +99,6 @@ function Input(){
                     setAge(value)
                     }}>
                     <option value = "성인">성인</option>
-                    <option value = "아동">아동</option>
                 </select>
                 
                 <select id = "category" className = "category" onChange =  {(e)=>{
