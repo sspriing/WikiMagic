@@ -36,11 +36,11 @@ function Input(){
                     <option value = "스카프">스카프</option>
                     <option value = "원피스">원피스</option>
                     <option value = "바지">바지</option>
-                    <option value = "잠옷세트">잠옷세트</option>
+                    {/* <option value = "잠옷세트">잠옷세트</option> */}
                     <option value = "선글라스">선글라스</option>
                     <option value = "우양산">우양산</option>
                     <option value = "가방">가방</option>
-                    <option value = "방향제">방향제</option>
+                    {/* <option value = "방향제">방향제</option> */}
                     <option value = "매출 누락">매출 누락</option>
                 </Fragment>
     
