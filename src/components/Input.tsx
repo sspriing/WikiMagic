@@ -26,6 +26,9 @@ function Input(){
         cat = <Fragment>
                     <option value = "양말">양말</option>
                     <option value = "모자">모자</option>
+                    <option value = "장갑">장갑</option>
+                    <option value = "귀마개">귀마개</option>
+                    <option value = "레깅스">레깅스</option>
                     <option value = "헤어핀">헤어핀</option>
                     <option value = "헤어링">헤어링</option>
                     <option value = "헤어밴드">헤어밴드</option>
